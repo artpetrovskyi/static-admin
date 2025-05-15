@@ -3,16 +3,20 @@
   "private": true,
   "version": "0.0.0",
   "type": "module",
+  "homepage": "https://underwhot.github.io/fontan",
   "scripts": {
     "dev": "vite",
     "build": "vite build",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "fetch-content": "rm -rf tmp_gh_pages && git clone --depth 1 --filter=blob:none --sparse --branch gh-pages https://github.com/underwhot/fontan.git tmp_gh_pages && cd tmp_gh_pages && git sparse-checkout set content images && cp -r content ../dist/content && cp -r images ../dist/images && cd .. && rm -rf tmp_gh_pages",
+    "deploy": "npm run build && npm run fetch-content && gh-pages -d dist"
   },
   "devDependencies": {
     "vite": "^6.3.5"
   },
   "dependencies": {
     "@tailwindcss/vite": "^4.1.7",
+    "gh-pages": "^6.3.0",
     "tailwindcss": "^4.1.7"
   }
 }
