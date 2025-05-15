@@ -1,9 +1,11 @@
 media: images
+
 content:
   - name: hero
-    label: Hero
+    label: Hero Section
     type: collection
-    path: 'content'
+    path: 'content/hero.json'
+    format: json
     fields:
       - name: title
         label: Title
