@@ -3,7 +3,7 @@ content:
   - name: hero
     label: Hero Section
     type: collection
-    path: 'content'
+    path: 'content/hero.json'
     format: json
     fields:
       - name: title
