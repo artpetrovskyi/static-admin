@@ -1,4 +1,4 @@
-# Fontan Static Site with PagesCMS
+# Static Site with PagesCMS
 
 This is a simple static website hosted on **GitHub Pages**, where content is editable via [PagesCMS](https://pagescms.org/).  
 The site uses `JSON` files for dynamic content and supports media like images.
